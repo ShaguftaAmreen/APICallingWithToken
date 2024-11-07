@@ -10,7 +10,7 @@ const Login = () => {
             email:email,
             password:password
         }
-        console.log(payload)
+       // console.log(payload)
 
 
 
@@ -33,14 +33,14 @@ const Login = () => {
         Login Page
       </p>
       <div>
-        <p style={{color:"white"}}>Email :</p>
-        <input type='text' onChange={(e)=>{setEmail(e.target.value)}} value={email}/>
+        <label style={{color:"white"}}>Email :</label>
+        <input type='text' onChange={(e)=>{setEmail(e.target.value)}} value={email} style={{padding:"5px",marginLeft:"30px"}} placeholder='Enter the email'/>
       </div>
       <div>
-        <p style={{color:"white"}}>Password :</p>
-        <input onChange={(e)=>{setPassword(e.target.value)}} value={password} type='password' />
+        <label style={{color:"white"}}>Password : </label>
+        <input onChange={(e)=>{setPassword(e.target.value)}} value={password} style={{padding:"5px",marginTop:"10px"}} type='password' placeholder='Enter the password' />
       </div>
-      <button type='submit' onClick={handleSubmit}>Login</button>
+      <button type='submit' onClick={handleSubmit} style={{marginTop:"15px"}}>Login</button>
       <p className='p' style={{color:"white"}}>Login here!</p>
     </>
   )
